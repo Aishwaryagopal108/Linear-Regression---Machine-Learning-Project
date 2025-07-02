@@ -6,39 +6,39 @@ This project focuses on the complete lifecycle of building a predictive data mod
 
 The project is divided into five parts:
 
-Part 1 – Data Creation:
-Using Python’s random number generators and distribution functions, I will create a synthetic dataset with four numerical variables:
-Two variables will follow a Normal Distribution with the same mean but different standard deviations.
-One variable will be based on a different distribution, such as uniform, exponential, or binomial.
-The fourth variable will be a non-linear combination of the other three variables (not just a simple sum).
-To ensure code reusability and clarity, all data generation steps will be written as modular Python functions.
+Part 1 – Data Creation (30 points)
+Using Python’s random number generators and distribution functions, I created a synthetic dataset with four numerical variables:
+Two variables followed a Normal Distribution with the same mean but different standard deviations.
+One variable was based on a different distribution, such as uniform, exponential, or binomial.
+The fourth variable was a non-linear combination of the other three variables (not just a simple sum).
+To ensure reusability and clarity, I modularized the data generation code into functions.
 
-Part 2 – Data Visualization:
-I will use Matplotlib and Seaborn to create a 4x4 scatterplot matrix, visualizing relationships between all four variables.
-The plots will include:
+Part 2 – Data Visualization (10 points)
+I used Matplotlib and Seaborn to create a 4x4 scatterplot matrix, visualizing relationships between all four variables.
+The plots included:
 Axis labels
 Titles
 Distinct colors for each variable pair
-The entire visualization process will also be modularized into a separate Python function.
+The entire visualization process was encapsulated in a separate Python function.
 
-Part 3 – Descriptive Statistics:
-For each variable, I will calculate and display the following statistical measures:
+Part 3 – Descriptive Statistics (10 points)
+For each variable, I calculated and displayed the following statistical measures:
 Mean
 Median
 Mode
 Standard Deviation
 Range
-The code will be organized into a single function that takes the dataset as input and returns a clean, readable summary table of statistics.
+I organized this code into a single function that took the dataset as input and returned a clean, readable summary table of statistics.
 
-Part 4 – Data Splitting:
-The dataset will be split into Training (60%), Validation (20%), and Test (20%) sets using Scikit-learn’s train_test_split function.
-This splitting logic will be modularized into a reusable function that accepts the dataset and desired split ratios as arguments.
+Part 4 – Data Splitting (20 points)
+I split the dataset into Training (60%), Validation (20%), and Test (20%) sets using Scikit-learn’s train_test_split function.
+The splitting logic was modularized into a reusable function that accepted the dataset and desired split ratios as arguments.
 
-Part 5 – Linear Regression Model:
-Using the training set, I will build a Linear Regression Model using sklearn.linear_model.LinearRegression to predict the derived variable (fourth variable) based on the other three.
-Key steps include:
+Part 5 – Linear Regression Model (30 points)
+Using the training set, I built a Linear Regression Model with sklearn.linear_model.LinearRegression to predict the derived variable (fourth variable) based on the other three.
+Key steps included:
 Training the model on the training set
 Validating the model on the validation set
-Testing and reporting model performance on the test set
-Visualizing predicted vs. actual values using a scatter plot
-Model building and evaluation will also be written inside a clean, reusable function.
+Testing and reporting the model performance on the test set
+Visualizing the predicted vs. actual values using a scatter plot
+I wrote the model-building and evaluation steps inside a modular and reusable Python function.
